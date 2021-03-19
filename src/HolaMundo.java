@@ -1,33 +1,21 @@
 // Mi clase en Java
+
 public class HolaMundo {
+
     public static void main(String argrs[]) {
+
+        var usuario = "Juan";
+        var titulo = "Ingeniero";
+
+        var union = titulo + " " + usuario;
+        System.out.println("union = " + union);
         
-        //Definimos la variable
-        int miVariableEntera = 10;
-        System.out.println(miVariableEntera);
+        var i = 3;
+        var j = 4;
         
-        //Modificamos el valor de la variable
-        miVariableEntera = 5;
-        System.out.println(miVariableEntera);
-        
-        String miVariableCadena = "Saludos";
-        System.out.println(miVariableCadena);
-        
-        miVariableCadena = "Hasta la vista, Baby!";
-        System.out.println(miVariableCadena);
-        
-        // var - Inferencia de tipos en Java
-        var miVariableEntera2 = 15;
-        System.out.println(miVariableEntera2);
-        
-        var miVariableCadena2 = "Nueva Cadena";
-        System.out.println("miVariableCadena2 = " + miVariableCadena2);
-        
-        // Valores permitidos en el nombre de variables
-        var miVariable = 1;
-        var _miVariable = 2;
-        var $miVariable = 3;
-        // var áVariable = 10; No se recomenda utilizar
-        // var #miVariable = 2; No se permite utilizar caracteres especiales
-    } 
+        System.out.println(i + j); // Se realiza la suma de números.
+        System.out.println(i + j + usuario); // Evaluación de izq a der, realiza suma. 
+        System.out.println(usuario + i + j); // Contexto cadena, tudo es cadena.
+        System.out.println(usuario + (i + j));  // Uso de parentesis modifican la prioridad en la evaluación.
+    }
 }

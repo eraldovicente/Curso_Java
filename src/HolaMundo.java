@@ -7,14 +7,29 @@ public class HolaMundo {
 
     public static void main(String argrs[]) { 
 
-        var numeroEntero = 10;
-        System.out.println("numeroEntero = " + numeroEntero);
+        char miCaracter = 'a';
+        System.out.println("miCaracter = " + miCaracter);
         
-        var numeroDouble = 10.0;
-        System.out.println("numeroDouble = " + numeroDouble);
+        char varChar = '\u0021';
+        System.out.println("varChar = " + varChar);
         
-        var numeroFloat = 10.0F;
-        System.out.println("numeroFloat = " + numeroFloat);
+        char varCharDecimal = 33;
+        System.out.println("varCharDecimal = " + varCharDecimal);
+        
+        char varCharSimbolo = '!';
+        System.out.println("varCharSimbolo = " + varCharSimbolo);
+        
+        var varChar1 = '\u0021';
+        System.out.println("varChar = " + varChar1);
+        
+        var varCharDecimal2 = 33;
+        System.out.println("varCharDecimal = " + varCharDecimal2);
+        
+        var varCharSimbolo3 = '!';
+        System.out.println("varCharSimbolo = " + varCharSimbolo3);
+        
+        int letra = 'a';
+        System.out.println("letra = " + letra);
 
     }
 }

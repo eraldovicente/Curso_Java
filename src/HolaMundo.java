@@ -6,29 +6,25 @@ import java.util.Scanner;
 public class HolaMundo {
 
     public static void main(String argrs[]) { 
-
-        // convertir tipo String a un tipo int
-        var edad = Integer.parseInt("20");
-        // var edad = "20";
-        // System.out.println("edad = " + (edad + 1));
+        int a=3, b=2;
+        var resultado = a + b;
+        System.out.println("resultado suma = " + resultado);
         
-        var valorPI = Double.parseDouble("3.1416");
-        System.out.println("valorPI = " + valorPI);
+        resultado = a - b;
+        System.out.println("resultado resta = " + resultado);
         
-        //Pedir un valor
-        var consola = new Scanner(System.in);
-//        System.out.println("Proporciona tu edad");
-//        edad = Integer.parseInt( consola.nextLine() );
-//        System.out.println("edad = " + edad);
+        resultado = a * b;
+        System.out.println("resultado multiplicacion = " + resultado);
         
-        var edadTexto = String.valueOf(10);
-        System.out.println("edadTexto = " + edadTexto);
+        var resultado2 = 3D / b;
+        System.out.println("resultado division = " + resultado2);
         
-        var caracter = "hola".charAt(1);
-        System.out.println("caracter = " + caracter);
+        resultado = a % b;
+        System.out.println("resultado modulo = " + resultado);
         
-        System.out.println("Proporciona un caracter: ");
-        caracter = consola.nextLine().charAt(0);
-        System.out.println("caracter = " + caracter);
+        if( a % 2 == 0 )
+            System.out.println("Es numero par");
+        else
+            System.out.println("Es numero impar");
     }
 }
